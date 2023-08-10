@@ -1,0 +1,143 @@
+.header {
+    z-index: 100;
+    height: 62px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(216, 216, 216);
+}
+
+.chap-header {
+    display: flex;
+    align-items: center;
+    margin-right: 70px;
+}
+
+.menu {
+    height: 26px;
+    margin-left: 27px;
+    margin-right: 20px;
+}
+
+.youtube {
+    height: 22px;
+    margin-left: 8px;
+}
+
+.vasat-header {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 75px;
+    max-width: 513px;
+}
+
+.search-bar {
+    flex: 1;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+    background-color: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    margin-top: -1px;
+    border-radius: 3px 0 0 3px;
+    min-width: 0;
+
+}
+
+.search-bar::placeholder {
+    font-family: Roboto, Arial;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.search-b {
+    height: 43px;
+    width: 66px;
+    background-color: rgb(240, 240, 240);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192, 192, 192);
+    margin-left: -1px;
+    margin-right: 10px;
+    margin-bottom: 1px;
+}
+
+.voice-b {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(248, 248, 248);
+}
+
+.voice {
+    height: 26px;
+    margin-top: 4px;
+}
+
+.search {
+    height: 25px;
+    margin-top: 3px;
+}
+
+.rast-header {
+    width: 215px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+
+.upload {
+    height: 28px;
+}
+
+.notif-d {
+    position: relative;
+
+}
+
+.notif-n {
+    position: absolute;
+    align-items: center;
+    right: -7px;
+    top: -2px;
+    background-color: rgb(202, 0, 0);
+    color: white;
+    padding: 1px 5px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Roboto, Arial;
+    font-size: 11px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+}
+
+.notif {
+    height: 26px;
+}
+
+.apps {
+    height: 26px;
+}
+
+.prof {
+    height: 34px;
+    border-radius: 16px;
+    color: white;
+    border-width: 5px;
+    border-color: gray;
+}

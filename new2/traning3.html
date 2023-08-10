@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>training</title>
+  </head>
+  <body>
+    <p>Amazon shipping calculator</p>
+    <p>Order under $40 = +$10 shipping.</p>
+    <p>Order over $40 = FREE shipping.</p>
+    <input
+      onkeydown="
+   clicktaeed();
+    "
+      class="megdar"
+      type="number"
+      placeholder="order price"
+    />
+    <button
+      onclick="
+    hesabkardan();
+    "
+    >
+      calculate
+    </button>
+    <p class="result"></p>
+
+    <script>
+      function clicktaeed() {
+        if (event.key === "Enter") {
+          hesabkardan();
+        }
+      }
+
+      function hesabkardan() {
+        const megdar = document.querySelector(".megdar");
+        let adad = Number(megdar.value);
+
+        if (adad < 40) {
+          adad = adad + 10;
+        }
+        document.querySelector(".result").innerHTML = `$ ${adad}`;
+      }
+    </script>
+  </body>
+</html>
