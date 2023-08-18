@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<link rel="stylesheet" href="/rock-paper-scissors.css">
+    <title>booleans</title>
+  </head>
+  <body>
+    <p class="title">Rock Paper Scissors</p>
+    <button
+      class="choose"
+      onclick="
+      playGame ('Rock');
+    "
+    >
+      <img class="img" src="/img/rock-emoji.png" />
+    </button>
+    <button
+      class="choose"
+      onclick="
+    playGame ('paper');
+    "
+    >
+      <img class="img" src="/img/paper-emoji.png" />
+    </button>
+    <button
+      class="choose"
+      onclick="
+    playGame ('Scissors');
+    "
+    >
+      <img class="img" src="/img/scissors-emoji.png" />
+    </button>
+    <p class="resulth"></p>
+    <p class="scoreh"></p>
+    <p class="move"></p>
+    <button class="resets"
+      onclick="
+  score.wins = 0;
+  score.losses = 0;
+  score.Ties = 0;
+  localStorage.removeItem('Score');
+  gameScore();
+
+  "
+    >
+      Reset Score
+    </button>
+
+    <script src="/rock-paper-scissors.js">
+
+    </script>
+  </body>
+</html>
