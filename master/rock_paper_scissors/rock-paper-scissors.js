@@ -18,23 +18,23 @@ let score = JSON.parse(localStorage.getItem("Score")) || {
         result = "You win.";
       } else if (computerMove === "paper") {
         result = "Tie.";
-      } else if (computerMove === "Scissors") {
+      } else if (computerMove === "scissors") {
         result = "You lose.";
       }
-    } else if (playerMove === "Rock") {
+    } else if (playerMove === "rock") {
       if (computerMove === "rock") {
         result = "Tie.";
       } else if (computerMove === "paper") {
         result = "You lose.";
-      } else if (computerMove === "Scissors") {
+      } else if (computerMove === "scissors") {
         result = "You win.";
       }
-    } else if (playerMove === "Scissors") {
+    } else if (playerMove === "scissors") {
       if (computerMove === "rock") {
         result = "You lose.";
       } else if (computerMove === "paper") {
         result = "You win.";
-      } else if (computerMove === "Scissors") {
+      } else if (computerMove === "scissors") {
         result = "Tie.";
       }
     }
@@ -51,7 +51,7 @@ let score = JSON.parse(localStorage.getItem("Score")) || {
 
     document.querySelector(
       ".move"
-    ).innerHTML = `You <img class="imgs" src="/img/${playerMove}-emoji.png" /> <img class="imgs" src="/img/${computerMove}-emoji.png" /> Computer`;
+    ).innerHTML = `You <img class="imgs" src="./img/${playerMove}-emoji.png" /> <img class="imgs" src="./img/${computerMove}-emoji.png" /> Computer`;
 
     localStorage.setItem("Score", JSON.stringify(score));
 
@@ -73,7 +73,7 @@ let score = JSON.parse(localStorage.getItem("Score")) || {
     } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
       computerMove = "paper";
     } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
-      computerMove = "Scissors";
+      computerMove = "scissors";
     }
     console.log(computerMove);
 
