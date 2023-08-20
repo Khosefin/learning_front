@@ -63,15 +63,17 @@ function shuffle(arrey) {
 }
 shuffle(cardArray);
 
+const resetBtn = document.querySelector("#resetBtn");
 const grid = document.querySelector(".grid");
 const resultDisplay = document.querySelector("#result");
 let cardsChosen = [];
 let cardsChosenId = [];
 let cardsWon = [];
-
+let card;
 function createBoard() {
   for (let i = 0; i < cardArray.length; i++) {
-    const card = document.createElement("img");
+    
+    card = document.createElement("img");
     card.setAttribute("src", "images/blank.png");
     card.setAttribute("data-id", i);
     card.addEventListener("click", flipCard);
@@ -80,8 +82,8 @@ function createBoard() {
 }
 function checkForMatch() {
   const cards = document.querySelectorAll("img");
-  const selectedId1 = cardsChosenId[0];
-  const selectedId2 = cardsChosenId[1];
+  let selectedId1 = cardsChosenId[0];
+  let selectedId2 = cardsChosenId[1];
 
   if (selectedId1 == selectedId2) {
     cards[selectedId1].setAttribute("src", "images/blank.png");
@@ -114,3 +116,7 @@ function flipCard() {
 }
 
 createBoard();
+
+resetBtn.addEventListener("click", () => {
+  location.reload();
+});
