@@ -9,7 +9,7 @@ const resetButton = $.querySelector(".resetButton");
 const changeButton = $.querySelector(".changeButton");
 
 function convert() {
-  if (converter.value === "") {
+  if (converter.value === "" || isNaN(+converter.value)) {
     result.innerHTML = "insert correct value";
     result.style.color = "#993300";
   } else {
